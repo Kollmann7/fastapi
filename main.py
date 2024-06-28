@@ -1,23 +1,24 @@
 from fastapi import FastAPI, Path, Query, Depends
-import uvicorn
-from logger import logger
+from logger import logger, listener
 from middleware import log_middleware
 from starlette.middleware.base import BaseHTTPMiddleware
 import starlette.status as status
-
 from typing import Annotated
-from models import BandCreate, Band, GenreUrl, Album
-
-from db import init_db, get_session
 from sqlmodel import Session, select
-
 from contextlib import asynccontextmanager
+
+from models import BandCreate, Band, GenreUrl, Album
+from db import init_db, get_session
+import time
+
 
 @asynccontextmanager
 async def livespan(app: FastAPI):
     init_db()
     yield
+    listener.stop()
 
+listener.start()
 app = FastAPI(lifespan=livespan)
 app.add_middleware(BaseHTTPMiddleware, dispatch=log_middleware)
 
@@ -25,6 +26,14 @@ app.add_middleware(BaseHTTPMiddleware, dispatch=log_middleware)
 @app.get("/")
 def read_root() -> dict:
     return {"message": "Hello"}
+
+@app.get("/orders", status_code=status.HTTP_200_OK)
+async def orders():
+    start_time = time.time()
+    logger.critical('The database is dead !')
+
+    return {"message": "Hello", "duration": time.time() - start_time}
+    
 
 @app.get("/bands", status_code=status.HTTP_200_OK)
 async def bands(
