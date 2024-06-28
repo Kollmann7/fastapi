@@ -1,0 +1,118 @@
+2024-06-28 14:26:46,204 - logger - INFO - app started
+2024-06-28 14:27:24,963 - logger - INFO - app started
+2024-06-28 14:27:30,405 - logger - INFO - app started
+2024-06-28 14:27:34,119 - logger - INFO - app started
+2024-06-28 14:27:40,359 - logger - INFO - app started
+2024-06-28 14:27:46,945 - logger - INFO - app started
+2024-06-28 14:27:48,737 - logger - INFO - app started
+2024-06-28 14:27:56,545 - logger - INFO - app started
+2024-06-28 14:27:58,934 - logger - INFO - Request to index page
+2024-06-28 14:34:05,875 - logger - INFO - app started
+2024-06-28 14:35:30,350 - logger - INFO - app started
+2024-06-28 14:35:37,897 - logger - INFO - app started
+2024-06-28 14:35:44,139 - logger - INFO - app started
+2024-06-28 14:36:24,733 - logger - INFO - app started
+2024-06-28 14:36:56,647 - logger - INFO - app started
+2024-06-28 14:37:41,521 - logger - INFO - app started
+2024-06-28 14:37:50,928 - logger - INFO - app started
+2024-06-28 14:37:52,539 - logger - INFO - app started
+2024-06-28 14:39:00,844 - logger - INFO - Request to index page
+2024-06-28 14:39:11,136 - logger - INFO - Request to index page
+2024-06-28 14:40:25,917 - logger - INFO - Request to upload videos page
+2024-06-28 14:41:34,638 - logger - INFO - app started
+2024-06-28 14:42:56,223 - logger - INFO - app started
+2024-06-28 14:42:57,675 - logger - INFO - app started
+2024-06-28 14:43:42,744 - logger - INFO - app started
+2024-06-28 14:43:44,210 - logger - INFO - app started
+2024-06-28 14:43:49,552 - logger - INFO - app started
+2024-06-28 14:43:57,690 - logger - INFO - app started
+2024-06-28 14:44:00,157 - logger - INFO - app started
+2024-06-28 14:44:09,468 - logger - INFO - app started
+2024-06-28 14:44:11,588 - logger - INFO - Request to upload videos page
+2024-06-28 14:47:40,876 - logger - INFO - app started
+2024-06-28 14:47:43,729 - logger - INFO - app started
+2024-06-28 14:47:47,555 - logger - INFO - app started
+2024-06-28 14:47:49,726 - logger - INFO - app started
+2024-06-28 14:48:16,441 - logger - INFO - app started
+2024-06-28 14:48:22,099 - logger - INFO - app started
+2024-06-28 14:48:36,877 - logger - INFO - app started
+2024-06-28 14:48:42,485 - logger - INFO - app started
+2024-06-28 14:48:45,651 - logger - INFO - app started
+2024-06-28 14:49:02,841 - logger - INFO - app started
+2024-06-28 14:49:05,236 - logger - INFO - app started
+2024-06-28 14:49:10,009 - logger - INFO - app started
+2024-06-28 14:49:15,434 - logger - INFO - app started
+2024-06-28 14:49:21,108 - logger - INFO - app started
+2024-06-28 14:49:24,257 - logger - INFO - app started
+2024-06-28 14:49:41,806 - logger - INFO - app started
+2024-06-28 14:49:53,333 - logger - INFO - app started
+2024-06-28 14:51:20,843 - logger - INFO - app started
+2024-06-28 14:51:22,439 - logger - INFO - app started
+2024-06-28 14:51:53,025 - logger - INFO - app started
+2024-06-28 14:52:07,196 - logger - INFO - {'url': URL('http://localhost:8000/upload-videos'), 'method': 'GET', 'client_ip': '127.0.0.1', 'headers': {'host': 'localhost:8000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8', 'sec-gpc': '1', 'accept-language': 'fr-FR,fr', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'cookie': 'username-localhost-8889="2|1:0|10:1718367235|23:username-localhost-8889|44:ZDQ2ZDU4NjdkZTM5NDA2Zjk2MjdhZTkzZjI2ZGE1NDQ=|d7ec15bb1a97425dff804112c41d1c940a284cbaf226c528781366dbd51bc38c"'}, 'body': b''}
+2024-06-28 14:54:48,173 - logger - INFO - app started
+2024-06-28 14:54:54,003 - logger - INFO - app started
+2024-06-28 14:54:55,511 - logger - INFO - app started
+2024-06-28 14:55:02,474 - logger - INFO - app started
+2024-06-28 14:55:08,007 - logger - INFO - app started
+2024-06-28 14:55:09,551 - logger - INFO - app started
+2024-06-28 14:55:39,970 - logger - INFO - app started
+2024-06-28 14:55:43,473 - logger - INFO - app started
+2024-06-28 14:55:46,289 - logger - INFO - app started
+2024-06-28 14:55:48,202 - logger - INFO - app started
+2024-06-28 14:55:51,456 - logger - INFO - app started
+2024-06-28 14:55:53,266 - logger - INFO - app started
+2024-06-28 14:55:54,741 - logger - INFO - app started
+2024-06-28 14:55:56,686 - logger - INFO - app started
+2024-06-28 14:56:39,120 - logger - INFO - app started
+2024-06-28 15:00:08,939 - logger - INFO - app started
+2024-06-28 15:00:39,370 - logger - INFO - {'url': URL('http://localhost:8000/upload-videos'), 'method': 'GET', 'client_ip': '127.0.0.1', 'headers': {'host': 'localhost:8000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8', 'sec-gpc': '1', 'accept-language': 'fr-FR,fr', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'cookie': 'username-localhost-8889="2|1:0|10:1718367235|23:username-localhost-8889|44:ZDQ2ZDU4NjdkZTM5NDA2Zjk2MjdhZTkzZjI2ZGE1NDQ=|d7ec15bb1a97425dff804112c41d1c940a284cbaf226c528781366dbd51bc38c"'}, 'body': b''}
+2024-06-28 15:00:44,252 - logger - INFO - {'url': URL('http://localhost:8000/'), 'method': 'GET', 'client_ip': '127.0.0.1', 'headers': {'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8', 'sec-gpc': '1', 'accept-language': 'fr-FR,fr', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'cookie': 'username-localhost-8889="2|1:0|10:1718367235|23:username-localhost-8889|44:ZDQ2ZDU4NjdkZTM5NDA2Zjk2MjdhZTkzZjI2ZGE1NDQ=|d7ec15bb1a97425dff804112c41d1c940a284cbaf226c528781366dbd51bc38c"'}, 'body': b''}
+2024-06-28 15:02:48,058 - logger - INFO - app started
+2024-06-28 15:02:49,715 - logger - INFO - app started
+2024-06-28 15:02:51,322 - logger - INFO - app started
+2024-06-28 15:03:02,186 - logger - INFO - app started
+2024-06-28 15:03:13,865 - logger - INFO - app started
+2024-06-28 15:03:16,959 - logger - INFO - {'url': URL('http://localhost:8000/'), 'method': 'GET', 'client_ip': '127.0.0.1'}
+2024-06-28 15:05:32,197 - logger - INFO - app started
+2024-06-28 15:05:38,073 - logger - INFO - app started
+2024-06-28 15:05:47,481 - logger - INFO - app started
+2024-06-28 15:06:04,821 - logger - INFO - app started
+2024-06-28 15:06:33,005 - logger - INFO - app started
+2024-06-28 15:06:37,766 - logger - INFO - app started
+2024-06-28 15:06:39,461 - logger - INFO - app started
+2024-06-28 15:06:44,172 - logger - INFO - app started
+2024-06-28 15:06:46,380 - logger - INFO - app started
+2024-06-28 15:06:48,511 - logger - INFO - app started
+2024-06-28 15:07:00,203 - logger - INFO - app started
+2024-06-28 15:07:07,348 - logger - INFO - app started
+2024-06-28 15:07:46,477 - logger - INFO - {'url': URL('http://localhost:8000/'), 'method': 'GET', 'client_ip': '127.0.0.1', 'proccess_time': 0.0016231536865234375}
+2024-06-28 15:07:53,369 - logger - INFO - {'url': URL('http://localhost:8000/upload-videos'), 'method': 'GET', 'client_ip': '127.0.0.1', 'proccess_time': 0.0009992122650146484}
+2024-06-28 15:13:54,756 - logger - INFO - app started
+2024-06-28 15:13:56,630 - logger - INFO - app started
+2024-06-28 15:13:58,037 - logger - INFO - app started
+2024-06-28 15:14:05,176 - logger - INFO - app started
+2024-06-28 15:14:08,495 - logger - INFO - app started
+2024-06-28 15:14:12,779 - logger - INFO - app started
+2024-06-28 15:14:14,806 - logger - INFO - app started
+2024-06-28 15:14:16,502 - logger - INFO - app started
+2024-06-28 15:14:18,440 - logger - INFO - app started
+2024-06-28 15:14:19,916 - logger - INFO - app started
+2024-06-28 15:14:23,791 - logger - INFO - app started
+2024-06-28 15:14:27,665 - logger - INFO - app started
+2024-06-28 15:14:39,690 - logger - INFO - app started
+2024-06-28 15:14:46,046 - logger - INFO - app started
+2024-06-28 15:14:54,640 - logger - INFO - app started
+2024-06-28 15:15:02,824 - logger - INFO - read bands
+2024-06-28 15:15:02,825 - logger - INFO - {'url': URL('http://localhost:8000/bands'), 'method': 'GET', 'client_ip': '127.0.0.1', 'proccess_time': 0.0020003318786621094}
+2024-06-28 15:15:11,193 - logger - INFO - app started
+2024-06-28 15:15:52,746 - logger - INFO - app started
+2024-06-28 15:15:55,413 - logger - INFO - app started
+2024-06-28 15:15:59,184 - logger - INFO - app started
+2024-06-28 15:16:03,456 - logger - INFO - app started
+2024-06-28 15:16:06,060 - logger - INFO - read bands f{BANDS} doesn't work
+2024-06-28 15:16:06,061 - logger - INFO - {'url': URL('http://localhost:8000/bands'), 'method': 'GET', 'client_ip': '127.0.0.1', 'proccess_time': 0.001999378204345703}
+2024-06-28 15:16:32,542 - logger - INFO - app started
+2024-06-28 15:16:35,202 - logger - INFO - app started
+2024-06-28 15:16:40,092 - logger - INFO - app started
+2024-06-28 15:16:41,646 - logger - INFO - app started
