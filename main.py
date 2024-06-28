@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Path, Query, Depends
-from logger import logger, listener
+from logger.main_logger import logger
+from logger.smtp_logger import listener
 from middleware import log_middleware
 from starlette.middleware.base import BaseHTTPMiddleware
 import starlette.status as status
@@ -8,13 +9,12 @@ from sqlmodel import Session, select
 from contextlib import asynccontextmanager
 
 from models import BandCreate, Band, GenreUrl, Album
-from db import init_db, get_session
+from db import get_session
 import time
 
 
 @asynccontextmanager
 async def livespan(app: FastAPI):
-    init_db()
     yield
     listener.stop()
 

@@ -29,6 +29,7 @@ class BandBase(SQLModel):
 class Band(BandBase, table=True):
     id: int = Field(default=None, primary_key=True)
     albums: list[Album] = Relationship(back_populates='band')
+    year_formed: date | None = None
 
 class BandCreate(BandBase):
     albums: list[AlbumBase] | None = None
