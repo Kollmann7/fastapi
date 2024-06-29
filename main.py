@@ -44,10 +44,6 @@ app.include_router(orders_router, prefix="/orders", tags=["orders"])
 def read_root() -> dict:
     return {"message": "Hello"}
 
-@app.get("/secure", tags=["auth"])
-async def secure_route(token: str = Depends(oauth2_scheme)):
-    return {"message": "Secure route", "token": token}
-
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="debug", reload=True, reload_dirs=["./"])
