@@ -42,7 +42,7 @@ async def log_middleware(request: Request, call_next):
     return response
 
 def authenticate_request(request: Request) -> bool:
-    logger.info(f"Token: {token}")
+    logger.info(f"Token: {request.headers.get('Authorization')}")
     auth_header = request.headers.get("Authorization")
     if auth_header:
         token = auth_header.split(" ")[1]

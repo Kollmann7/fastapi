@@ -8,15 +8,15 @@ from db import get_session
 
 band_router = APIRouter()
 
-@band_router.get("/", status_code=200)
+@band_router.get("/", status_code=200,)
 async def get_bands(
     request: Request,  # Request comes first
     session: Session = Depends(get_session),
     genre: GenreUrl | None = None,
     q: Annotated[str | None, Query(max_length=10)] = None,
 ) -> List[Band]:
-    current_user = request.state 
-    logger.info(f"User {current_user['username']} is accessing to all bands")
+    current_user = request.state.user   
+    logger.info(f"User {current_user} is accessing to all bands")
     band_list = session.exec(select(Band)).all()
     if genre:
         band_list = [b for b in band_list if b.genre.value.lower() == genre.value.lower()]

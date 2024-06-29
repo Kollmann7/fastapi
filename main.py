@@ -1,22 +1,31 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
+from contextlib import asynccontextmanager
 
 from routes.auth import auth_router
 from routes.band import band_router
 from routes.orders import orders_router
-from logger.smtp_logger import listener
 from middleware import log_middleware
-from contextlib import asynccontextmanager
+from logger.smtp_logger import listener
 
 listener.start()
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     yield
     listener.stop()
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(
+    lifespan=lifespan,
+    title="My API",
+    description="API with JWT Authentication",
+    version="1.0.0",
+    swagger_ui_oauth2_redirect_url="/docs/oauth2-redirect",
+)
 
 app.add_middleware(BaseHTTPMiddleware, dispatch=log_middleware)
 app.add_middleware(
@@ -34,3 +43,11 @@ app.include_router(orders_router, prefix="/orders", tags=["orders"])
 @app.get("/")
 def read_root() -> dict:
     return {"message": "Hello"}
+
+@app.get("/secure", tags=["auth"])
+async def secure_route(token: str = Depends(oauth2_scheme)):
+    return {"message": "Secure route", "token": token}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="debug", reload=True, reload_dirs=["./"])
