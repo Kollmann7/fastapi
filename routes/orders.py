@@ -1,6 +1,7 @@
-from fastapi import APIRouter, status
+from fastapi import APIRouter
 import time
 from logger.main_logger import logger
+from starlette import status
 
 orders_router = APIRouter()
 

@@ -5,8 +5,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from routes.auth import auth_router
 from routes.band import band_router
 from routes.orders import orders_router
-from middleware import log_middleware
 from logger.smtp_logger import listener
+from middleware import log_middleware
 from contextlib import asynccontextmanager
 
 listener.start()

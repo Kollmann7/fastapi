@@ -2,7 +2,7 @@ import jwt
 from datetime import datetime, timedelta
 from fastapi import Depends, HTTPException, Security
 from fastapi.security import HTTPBearer, OAuth2PasswordBearer
-from models.user import User
+from starlette import status
 
 SECRET_KEY = "your_secret_key"
 ALGORITHM = "HS256"
@@ -23,12 +23,12 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-def verify_token(token: str = Depends(oauth2_scheme)):
+def verify_token(token: str):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
         if username is None:
-            raise HTTPException(status_code=403, detail="Token is invalid or expired")
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Token is invalid or expired")
         return payload
     except jwt.PyJWTError:
-        raise HTTPException(status_code=403, detail="Token is invalid or expired")
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Token is invalid or expired")

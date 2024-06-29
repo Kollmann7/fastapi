@@ -7,6 +7,8 @@ from auth import ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token, verify_token
 from db import get_session
 from models.user import User, UserCreate
 from passlib.context import CryptContext
+from logger.main_logger import logger
+
 
 auth_router = APIRouter()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -15,7 +17,7 @@ def get_user_by_username(username: str, session: Session = Depends(get_session))
     return session.exec(select(User).where(User.username == username)).first()
 
 def create_user(user: UserCreate, session: Session = Depends(get_session)):
-    hashed_password = pwd_context.hash(user.password)
+    hashed_password = pwd_context.hash(user.hashed_password)
     db_user = User(username=user.username, hashed_password=hashed_password)
     session.add(db_user)
     session.commit()
@@ -36,6 +38,7 @@ def authenticate_user(username: str, password: str, session: Session = Depends(g
 
 @auth_router.post("/token")
 def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
+    logger.info(f"User {form_data.username} is logging in")
     user = authenticate_user(form_data.username, form_data.password, session)
     if not user:
         raise HTTPException(status_code=401, detail="Incorrect username or password", headers={"WWW-Authenticate": "Bearer"})
